@@ -66,58 +66,64 @@ body {
   }
 }
 
-.avatar-icon-container {
+#avatar-social-container {
   display: flex;
   padding: 1rem 2rem 1rem 2rem;
   text-align: center;
-  background-color: var(--Desaturated-Dark-Blue);
   border-bottom-left-radius: var(--b-rad);
   border-bottom-right-radius: var(--b-rad);
-  height:  5rem;
+  height: 5rem;
 
-  & .avatar-icon-image {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    display: none;
+  & #avatar-info-container {
+    display: flex;
+
+    & .avatar-icon-image {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+    }
+
+    & .avatar-icon-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+      text-align: start;
+
+      & .avatar-icon-name,
+      .avatar-icon-date {
+        font-size: var(--base);
+      }
+
+      & .avatar-icon-name {
+        color: var(--Very-Dark-Grayish-Blue);
+      }
+
+      & .avatar-icon-date {
+        color: var(--Desaturated-Dark-Blue);
+      }
+    }
   }
 
-  & .avatar-icon-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    display: none;
-    
+  
+  
+  
 
-    & .avatar-icon-name,
-    .avatar-icon-date {
-      font-size: var(--base);
-    }
-
-    & .avatar-icon-name {
-      color: var(--Very-Dark-Grayish-Blue);
-    }
-
-    & .avatar-icon-date {
-      color: var(--Desaturated-Dark-Blue);
-    }
-  }
-
-  & .social-icons {
-    display: flex;
+  & #social-icons {
     align-items: center;
-    /* display: none; */
+    display: none;
 
     & .social-icons-text {
       font-size: var(--base);
-      letter-spacing: .3rem;
-      color: var(--Grayish-Blue)
+      letter-spacing: 0.3rem;
+      color: var(--Grayish-Blue);
     }
 
     & img {
       margin-left: 1rem;
     }
   }
+
+  
 
   & .avatar-icon-share-container {
     background-color: var(--Light-Grayish-Blue);
@@ -135,3 +141,5 @@ body {
     }
   }
 }
+
+

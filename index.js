@@ -1,0 +1,25 @@
+// element variables
+const shareButton = document.getElementById("avatar-icon-share-container");
+const avatarInfoGroup = document.getElementById("avatar-info-container");
+const socialGroup = document.getElementById("social-icons");
+const avatarSocialContainer = document.getElementById("avatar-social-container");
+const shareImage = document.getElementById("avatar-icon-share");
+
+
+function toggleFunc() {
+  if (window.getComputedStyle(avatarInfoGroup).display === "flex") {
+    avatarInfoGroup.style.display = "none";
+    socialGroup.style.display = "flex";
+    avatarSocialContainer.style.backgroundColor = "#48556a"
+    shareButton.style.backgroundColor = "#9eafc2";
+    shareImage.setAttribute("fill", "white")
+  } else {
+    avatarInfoGroup.style.display = "flex";
+    socialGroup.style.display = "none";
+    avatarSocialContainer.style.backgroundColor = "#ffffff"
+    shareButton.style.backgroundColor = "#ecf2f8";
+
+  }
+}
+
+shareButton.addEventListener("click", toggleFunc);
