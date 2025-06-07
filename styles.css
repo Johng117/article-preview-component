@@ -8,7 +8,7 @@
   /* font-sizing */
   --base: 13px;
   --lg: 1.2rem;
-  --xl: 1.8rem;
+  --xl: 1.4rem;
   /* misc */
   --b-rad: 1rem;
 }
@@ -45,6 +45,8 @@ body {
   height: auto;
   max-height: 30rem;
   z-index: 0;
+  border-top-left-radius: var(--b-rad);
+  border-top-right-radius: var(--b-rad);
 }
 
 .content-container {
@@ -104,10 +106,6 @@ body {
     }
   }
 
-  
-  
-  
-
   & #social-icons {
     align-items: center;
     display: none;
@@ -122,8 +120,6 @@ body {
       margin-left: 1rem;
     }
   }
-
-  
 
   & .avatar-icon-share-container {
     background-color: var(--Light-Grayish-Blue);
@@ -142,4 +138,19 @@ body {
   }
 }
 
+@media screen and (min-width: 490px) {
 
+  .content-container {
+    & h1 {
+      font-size: var(--xl);
+    }
+
+    h3 {
+      font-size: var(--lg);
+    }
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  
+}
