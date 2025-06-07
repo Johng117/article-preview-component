@@ -11,7 +11,8 @@ const shareImage = document.getElementById("avatar-icon-share");
 function toggleFunc() {
   if (window.getComputedStyle(avatarInfoGroup).display === "flex") {
     if(window.innerWidth>=1044) {
-      
+      console.log("bigger than  1044");
+      return;
     }
     avatarInfoGroup.style.display = "none";
     socialGroup.style.display = "flex";
