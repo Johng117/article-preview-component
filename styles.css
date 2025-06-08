@@ -11,7 +11,7 @@
   --lg: 1.2rem;
   --xl: 1.4rem;
   /* misc */
-  --b-rad: .6rem;
+  --b-rad: 0.6rem;
 }
 
 * {
@@ -123,6 +123,7 @@ body {
   }
 
   & .avatar-icon-share-container {
+    position: relative;
     background-color: var(--Light-Grayish-Blue);
     align-content: center;
     height: 2.3rem;
@@ -136,6 +137,16 @@ body {
       height: 1rem;
       width: 1rem;
     }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: -7.2rem;
+  left:-8rem;
+
+  & h1 {
+    color: white;
   }
 }
 
@@ -197,11 +208,11 @@ body {
     grid-row-start: 5;
     grid-row-end: 7;
     margin: 0 0 0 -5rem;
-    z-index:1;
-    height:auto;
+    z-index: 1;
+    height: auto;
     background-color: white;
     border-bottom-left-radius: 0;
-    
+
     & #avatar-info-container {
       align-items: center;
     }
