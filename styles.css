@@ -142,8 +142,8 @@ body {
 
 .tooltip {
   position: absolute;
-  top: -7.2rem;
-  left:-8rem;
+  top: -7rem;
+  left:-8.4rem;
 
   & h1 {
     color: white;
