@@ -6,27 +6,31 @@ const avatarSocialContainer = document.getElementById(
   "avatar-social-container"
 );
 const shareImage = document.getElementById("avatar-icon-share");
+const toolTip = document.getElementById("tooltip");
 
 // toggle function to switch views of avatar/social media element
 function toggleFunc() {
-  if (window.getComputedStyle(avatarInfoGroup).display === "flex") {
-    if(window.innerWidth>=1044) {
-      console.log("bigger than  1044");
-      return;
+  if (window.innerWidth < 1044) {
+    if (window.getComputedStyle(avatarInfoGroup).display === "flex") {
+      avatarInfoGroup.style.display = "none";
+      socialGroup.style.display = "flex";
+      avatarSocialContainer.style.backgroundColor = "#48556a";
+      shareButton.style.backgroundColor = "#9eafc2";
+      shareImage.style.cssText = "filter: brightness(250%)";
+    } else {
+      avatarInfoGroup.style.display = "flex";
+      socialGroup.style.display = "none";
+      avatarSocialContainer.style.backgroundColor = "#ffffff";
+      shareButton.style.backgroundColor = "#ecf2f8";
+      shareImage.style.cssText = "filter: brightness(100%)";
     }
-    avatarInfoGroup.style.display = "none";
-    socialGroup.style.display = "flex";
-    avatarSocialContainer.style.backgroundColor = "#48556a";
-    shareButton.style.backgroundColor = "#9eafc2";
-    shareImage.style.cssText = "filter: brightness(250%)";
-  } else {
-    avatarInfoGroup.style.display = "flex";
-    socialGroup.style.display = "none";
-    avatarSocialContainer.style.backgroundColor = "#ffffff";
-    shareButton.style.backgroundColor = "#ecf2f8";
-    shareImage.style.cssText = "filter: brightness(100%)";
   }
 }
 
 shareButton.addEventListener("click", toggleFunc);
 
+// if (window.innerWidth >= 1044) {
+//   console.log("bigger than  1044");
+//   toolTip.style.visibility = "visible";
+//   return;
+// }

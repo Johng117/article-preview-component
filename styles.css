@@ -140,18 +140,14 @@ body {
   }
 }
 
-.tooltip {
+#tooltip {
   position: absolute;
   top: -7rem;
   left: -8.4rem;
-
+  visibility: "hidden";
   & h1 {
     color: white;
   }
-}
-
-svg text {
-  font-family: "fontawesome";
 }
 
 @media screen and (min-width: 490px) {
