@@ -7,15 +7,25 @@
     />
 	    <style type="text/css">
             @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800");
-
 			.textStyle {
-				letter-spacing: 3px;	
+				letter-spacing: 4px;	
 				fill: #9eafc2;
                 font-size: 13px;
 			}
+
+            .icon {
+                font-family: FontAwesome;
+            }
 		</style>
 		<text x="30" y="35" class="textStyle" font-family="manrope">SHARE</text>
-        <a>
-        
-        </a>
+       <a href="https://en-gb.facebook.com/" target="_blank">
+            <image href="icon-facebook.svg" height="20" width="20" x="100" y="19"/>
+       </a>
+       <a href="https://x.com/?lang=en-gb" target="_blank">
+            <image href="icon-twitter.svg" height="20" width="20" x="135" y="19"/>
+       </a>
+       <a href="https://www.pinterest.com/" target="_blank">
+            <image href="icon-pinterest.svg" height="20" width="20" x="170" y="19"/>
+       </a>
+
 </svg>
