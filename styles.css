@@ -140,11 +140,19 @@ body {
   }
 }
 
-#tooltip {
+#avatar-social-container-desktop {
+  display: none;
+}
+
+#svg-container {
   position: absolute;
-  top: -7rem;
+  top: -6.8rem;
   left: -8.4rem;
-  visibility: "hidden";
+  height: 5rem;
+  visibility: hidden;
+}
+
+#tooltip {
   & h1 {
     color: white;
   }
@@ -206,7 +214,7 @@ body {
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 5;
-    grid-row-end: 7;
+    grid-row-end: 7;display: none;
     margin: 0 0 0 -5rem;
     z-index: 1;
     height: auto;
@@ -216,5 +224,6 @@ body {
     & #avatar-info-container {
       align-items: center;
     }
+
   }
 }

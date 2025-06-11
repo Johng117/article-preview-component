@@ -6,7 +6,7 @@ const avatarSocialContainer = document.getElementById(
   "avatar-social-container"
 );
 const shareImage = document.getElementById("avatar-icon-share");
-const toolTip = document.getElementById("tooltip");
+const svgBox = document.getElementById("svg-container");
 
 // toggle function to switch views of avatar/social media element
 function toggleFunc() {
@@ -24,6 +24,14 @@ function toggleFunc() {
       shareButton.style.backgroundColor = "#ecf2f8";
       shareImage.style.cssText = "filter: brightness(100%)";
     }
+  } else if(window.innerWidth >=1044) {
+    
+    if(window.getComputedStyle(svgBox).visibility === "hidden") {
+      svgBox.style.visibility = "visible";
+    } else {
+      svgBox.style.visibility = "hidden";
+    }
+
   }
 }
 
