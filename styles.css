@@ -39,6 +39,7 @@ body {
   margin: 5rem 2rem;
   border-radius: var(--b-rad);
   width: clamp(19rem, 95%, 38rem);
+  box-shadow: 0rem .1rem 1rem var(--Grayish-Blue);
 }
 
 .main-container-image {
